@@ -1,0 +1,12 @@
+.synthetic {
+  margin-top: 20px;
+  &-items {
+    display: flex;
+    gap: 20px;
+  }
+  &-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+  }
+}

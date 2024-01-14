@@ -1,0 +1,54 @@
+.header {
+  &-top {
+    background: $bgr-headerTop;
+    &__title {
+      font-family: $font-roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: 0.175px;
+    }
+
+    &__box:nth-child(2) {
+      max-width: 241px;
+    }
+
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__group {
+      align-items: center;
+      width: 670px;
+      display: flex;
+      gap: 26px;
+      padding: 12px 0;
+    }
+    &__groupIcon {
+      display: flex;
+      gap: 32px;
+      padding: 16px 0;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    &__title {
+      color: $color-titleHdTop;
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  &-iconDown {
+    color: $color-titleHdTop !important;
+  }
+}

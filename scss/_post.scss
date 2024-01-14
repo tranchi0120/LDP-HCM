@@ -1,0 +1,20 @@
+.post {
+  margin-top: 20px;
+  font-family: $font-roboto;
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+  }
+  &-box {
+    background: #f9f9f9;
+    display: flex;
+    &__title {
+      color: #182940;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 130%;
+      padding: 4px 6px;
+    }
+  }
+}
