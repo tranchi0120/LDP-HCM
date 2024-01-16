@@ -35,3 +35,17 @@
     line-height: 130%;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .links {
+    &-lists {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px 10px;
+      &__item {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

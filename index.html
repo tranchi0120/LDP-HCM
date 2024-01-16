@@ -28,7 +28,8 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
 
   <!-- icons awwesome -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
@@ -38,7 +39,7 @@
         <div class="header-top__main">
           <div class="header-top__group">
             <div class="header-top__box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21 22" fill="none">
                 <path
                   d="M19.9994 15.7254V18.5857C20.0038 19.6791 19.0207 20.5922 17.9168 20.4925C8.38893 20.5 0.999995 13.0425 1.00746 3.57859C0.908034 2.48056 1.81655 1.50112 2.90856 1.50009H5.77454C6.23816 1.49553 6.68764 1.65939 7.03917 1.96111C8.03858 2.81891 8.68142 5.73043 8.43411 6.88786C8.24098 7.7915 7.33006 8.42371 6.71076 9.04175C8.07072 11.4288 10.051 13.4051 12.4427 14.7624C13.062 14.1443 13.6955 13.2353 14.6009 13.0425C15.7624 12.7953 18.6926 13.439 19.547 14.4454C19.8501 14.8022 20.011 15.2578 19.9994 15.7254Z"
                   stroke="#B53C12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -46,7 +47,7 @@
               <span class="header-top__title">(028)-3829-1055</span>
             </div>
             <div class="header-top__box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="51" height="22" viewBox="0 0 18 22" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 18 22" fill="none">
                 <path
                   d="M17 9.41667C17 14.8445 10.6 20.5 9 20.5C7.4 20.5 1 14.8445 1 9.41667C1 5.04441 4.58172 1.5 9 1.5C13.4183 1.5 17 5.04441 17 9.41667Z"
                   stroke="#C8392B" stroke-width="1.5" />
@@ -56,7 +57,7 @@
                 Minh</span>
             </div>
             <div class="header-top__box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 18" fill="none">
                 <rect x="1" y="1" width="20" height="16" rx="5" stroke="#C8392B" stroke-width="1.5" />
                 <path d="M5 6L9.8 9.6C10.5111 10.1333 11.4889 10.1333 12.2 9.6L17 6" stroke="#C8392B" stroke-width="1.5"
                   stroke-linecap="round" stroke-linejoin="round" />
@@ -183,6 +184,9 @@
               <a href="#" class="navbar-link">CHÍNH QUYỀN</a>
             </li>
           </ul>
+          <div class="navbar-mobile">
+            <i class="open fa-solid fa-bars"></i>
+          </div>
         </div>
       </div>
     </nav>
@@ -300,18 +304,17 @@
           <div class="items-box">
             <h2 class="items-box__title">GÓC NHÌN</h2>
             <div class="items-box__image">
-              <img src="./images/items1.png" alt="items1" />
+              <img class="items-box__imgItem" src="./images/items1.png" alt="items1" />
             </div>
             <p class="items-box__content">
-              AI không thay thế được quan điểm, ý thức chính trị và tính
-              chuyên nghiệp của một nhà báo
+              Vượt qua tồn tại, hạn chế từng mắc phải để thực sự đưa Nghị quyết 31 vào cuộc sống
             </p>
           </div>
           <!-- box2 -->
           <div class="items-box">
             <h2 class="items-box__title">PHÓNG SỰ</h2>
             <div class="items-box__image">
-              <img src="./images/items2.png" alt="items1" />
+              <img class="items-box__imgItem" src="./images/items2.png" alt="items1" />
             </div>
             <p class="items-box__content">
               Thủ tướng: Phát triển xanh là yêu cầu tất yếu, khách quan đối
@@ -323,7 +326,7 @@
           <div class="items-box">
             <h2 class="items-box__title">NHÂN SỰ MỚI</h2>
             <div class="items-box__image">
-              <img src="./images/items3.png" alt="items1" />
+              <img class="items-box__imgItem" src="./images/items3.png" alt="items1" />
             </div>
             <p class="items-box__content">
               Bổ nhiệm đồng chí: Nguyễn Văn A vào vị trí mới thực hiện công
@@ -599,51 +602,53 @@
           </div>
           <!-- synthetic-right -->
           <div class="synthetic-right">
-            <h2 class="lists-title">THÔNG BÁO</h2>
-            <div class="lists-box">
-              <ul class="lists-list" id="scroll">
-                <li class="lists-item">
-                  Lấy ý kiến dự thảo văn bản "Luật đất đai"
-                </li>
-                <li class="lists-item">
-                  Quy định mức hỗ trợ học phí đối với các cơ sở giáo dục mầm
-                  non và giáo dục phổ thông công lập trên địa bàn tỉnh Đồng
-                  Tháp năm học 2022-2023
-                </li>
-                <li class="lists-item">
-                  Quyết định quy định các nội dung về bảo đảm yêu cầu phòng,
-                  chống thiên tai đối với việc quản lý, vận hành, sử dụng công
-                  trình trên địa bàn TP Hồ Chí Minh
-                </li>
-                <li class="lists-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur rhoncus nulla
-                </li>
-                <li class="lists-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur rhoncus nulla
-                </li>
-                <li class="lists-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur rhoncus nulla
-                </li>
-                <li class="lists-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur rhoncus nulla
-                </li>
-                <li class="lists-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur rhoncus nulla
-                </li>
-                <li class="lists-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur rhoncus nulla
-                </li>
-                <li class="lists-item">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur rhoncus nulla
-                </li>
-              </ul>
+            <div>
+              <h2 class="lists-title">THÔNG BÁO</h2>
+              <div class="lists-box">
+                <ul class="lists-list" id="scroll">
+                  <li class="lists-item">
+                    Lấy ý kiến dự thảo văn bản "Luật đất đai"
+                  </li>
+                  <li class="lists-item">
+                    Quy định mức hỗ trợ học phí đối với các cơ sở giáo dục mầm
+                    non và giáo dục phổ thông công lập trên địa bàn tỉnh Đồng
+                    Tháp năm học 2022-2023
+                  </li>
+                  <li class="lists-item">
+                    Quyết định quy định các nội dung về bảo đảm yêu cầu phòng,
+                    chống thiên tai đối với việc quản lý, vận hành, sử dụng công
+                    trình trên địa bàn TP Hồ Chí Minh
+                  </li>
+                  <li class="lists-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur rhoncus nulla
+                  </li>
+                  <li class="lists-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur rhoncus nulla
+                  </li>
+                  <li class="lists-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur rhoncus nulla
+                  </li>
+                  <li class="lists-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur rhoncus nulla
+                  </li>
+                  <li class="lists-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur rhoncus nulla
+                  </li>
+                  <li class="lists-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur rhoncus nulla
+                  </li>
+                  <li class="lists-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur rhoncus nulla
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="lists-image">
               <div class="lists-img">
@@ -770,6 +775,9 @@
                 <a href="#" class="menu-link">QUIZZ</a>
               </li>
             </ul>
+            <div class="menuOpen">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
           </div>
           <!-- group1 -->
           <div class="multimedia-group">
@@ -814,7 +822,7 @@
             </p>
           </div>
           <!-- box 2 -->
-          <div class="event-group2">
+          <div class="event-group">
             <!-- box1 -->
             <div class="event-box">
               <div class="event-box-image">
@@ -911,7 +919,7 @@
               <img src="./images/lib4.png" alt="#!" />
             </div>
           </div>
-          <div class="library-group2">
+          <div class="library-group">
             <div class="library-img">
               <img src="./images/lib5.png" alt="#!" />
             </div>
@@ -1195,7 +1203,7 @@
 
     </div>
     <div class="footer-bottom">
-      <p>Ghi rõ nguồn "HCM CityWeb" khi phát hành lại thông tin tại website này</p>
+      <span>Ghi rõ nguồn "HCM CityWeb" khi phát hành lại thông tin tại website này</span>
     </div>
   </footer>
 

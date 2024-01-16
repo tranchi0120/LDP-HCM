@@ -2,12 +2,12 @@
   font-family: $font-roboto;
   margin-top: 98px;
   background-image: url(../images/bg-footer.png);
-  width: 100vw;
+  width: 100%;
   height: 237px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding: 12px 0;
+  padding-top: 12px;
 
   &-main {
     display: flex;

@@ -4,15 +4,17 @@
     &__title {
       font-family: $font-roboto;
       font-size: 14px;
-      font-style: normal;
       font-weight: 500;
       line-height: 130%;
-      letter-spacing: 0.175px;
+
+      &__title:nth-child(2) {
+        width: 213px;
+      }
     }
 
-    &__box:nth-child(2) {
-      max-width: 241px;
-    }
+    // &__box:nth-child(2) {
+    //   max-width: 241px;
+    // }
 
     &__main {
       display: flex;

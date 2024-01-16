@@ -6,6 +6,10 @@
     display: flex;
     gap: 20px;
   }
+  &-img {
+    width: 100%;
+    object-fit: cover;
+  }
 
   &-box {
     position: relative;
@@ -25,7 +29,6 @@
       font-style: normal;
       font-weight: 600;
       line-height: 130%;
-      width: 350px;
     }
 
     &__title2 {
@@ -87,5 +90,10 @@
       border-radius: 50%;
       background-color: #c8392b;
     }
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
   }
 }

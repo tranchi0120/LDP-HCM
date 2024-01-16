@@ -28,6 +28,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    &-item {
+      padding: 15px 30px;
+    }
 
     &-link {
       color: #000;
@@ -35,7 +38,7 @@
       font-size: 16px;
       font-weight: 900;
       line-height: 130%;
-      padding: 15px 30px;
+
       // border-bottom: 2px solid #c8392b;
     }
   }
@@ -63,6 +66,15 @@
       border: none !important;
       border-radius: 50%;
       background: #c8392b;
+    }
+  }
+
+  .links {
+    &-lists {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 16px 30px !important;
     }
   }
 }

@@ -34,4 +34,20 @@
     align-items: center;
     gap: 28px;
   }
+
+  &-mobile {
+    display: none;
+  }
 }
+.open {
+  font-size: 24px;
+  color: $color-titleHeader;
+}
+
+// @media screen and (max-width: 960px) {
+//   .navbar {
+//     &-mobile {
+//       display: block !important;
+//     }
+//   }
+// }
