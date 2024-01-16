@@ -1,0 +1,13 @@
+.menu {
+  font-family: $font-roboto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 29px;
+  &-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+}

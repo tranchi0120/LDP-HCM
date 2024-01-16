@@ -1,0 +1,37 @@
+.links {
+  margin-top: 60px;
+  &-main {
+    padding: 47px 19px;
+    background: #f6f6f6;
+    display: flex;
+    gap: 70px;
+  }
+  &-lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 70px;
+    &__item {
+      color: #000;
+      font-family: $foont-merriweather;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 130%;
+    }
+  }
+  &-select {
+    margin-top: 16px;
+    padding: 10px 12px;
+    width: 340px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    outline: none;
+  }
+  &-option {
+    color: #182940;
+    font-family: $font-roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+}

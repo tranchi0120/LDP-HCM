@@ -1,0 +1,119 @@
+.footer {
+  font-family: $font-roboto;
+  margin-top: 98px;
+  background-image: url(../images/bg-footer.png);
+  width: 100vw;
+  height: 237px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 12px 0;
+
+  &-main {
+    display: flex;
+    gap: 8px;
+  }
+  &-group {
+    display: flex;
+    gap: 21px;
+  }
+
+  &-name {
+    color: #212529;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+    width: 294px;
+  }
+  &-text {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 473px;
+  }
+  &-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &-title {
+      color: #212529;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 130%;
+    }
+    &-list {
+      margin-top: 12px;
+      width: 290px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    &__item {
+      color: #212529;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 130%;
+    }
+    &__text {
+      margin-top: 4px;
+      color: #212529;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 130%;
+    }
+    &__text span {
+      color: #212529;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+
+  &-nameLink {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.035px;
+  }
+  &-nameLink span {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+
+  &-back {
+    gap: 9px;
+    display: flex;
+    width: 195px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    &-link {
+      display: flex;
+      gap: 6px;
+    }
+    &__item {
+      color: #212529;
+      font-family: $foont-merriweather;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 130%;
+    }
+  }
+
+  &-bottom {
+    background: rgba(119, 119, 119, 0.3);
+    padding: 2px 0;
+    text-align: center;
+    margin-top: 26px;
+  }
+  &-bottom p {
+    color: #212529;
+    font-family: $font-roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+}

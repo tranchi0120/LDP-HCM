@@ -1,4 +1,5 @@
 .synthetic {
+  font-family: $font-roboto;
   margin-top: 20px;
   &-items {
     display: flex;
@@ -8,5 +9,21 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 20px;
+  }
+
+  &-result {
+    background: rgba(245, 194, 66, 0.8);
+    padding-bottom: 8px;
+    margin-top: 17px;
+  }
+  &-poll {
+    background: #93202e;
+    margin-top: 13px;
+    padding-bottom: 34px;
+  }
+
+  &-main {
+    display: flex;
+    gap: 20px;
   }
 }
