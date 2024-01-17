@@ -182,15 +182,6 @@
     }
   }
 
-  .navbar {
-    &-menu {
-      display: none;
-    }
-    &-mobile {
-      display: block !important;
-    }
-  }
-
   .news {
     &-main {
       flex-wrap: unset;

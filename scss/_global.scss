@@ -73,6 +73,29 @@ a {
   content: "";
   width: 3px;
   height: 21px;
-  background: #da251c;
+  background: $color-titleHdTop;
   left: 0;
+}
+
+.scroll-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background: $color-titleHeader;
+  color: #ffffff;
+  border-radius: 10px;
+  position: fixed;
+  bottom: -20%;
+  right: 30px;
+  transition: 0.4s;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.show-scroll {
+  bottom: 50px;
+  visibility: visible;
 }

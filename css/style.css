@@ -68,8 +68,31 @@ a {
   content: "";
   width: 3px;
   height: 21px;
-  background: #da251c;
+  background: #ffffff;
   left: 0;
+}
+
+.scroll-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background: #c8392b;
+  color: #ffffff;
+  border-radius: 10px;
+  position: fixed;
+  bottom: -20%;
+  right: 30px;
+  transition: 0.4s;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.show-scroll {
+  bottom: 50px;
+  visibility: visible;
 }
 
 .header-top {
@@ -164,6 +187,65 @@ a {
   color: #c8392b;
 }
 
+.menu-close {
+  color: #d0574b;
+  font-size: 24px;
+  display: none;
+}
+
+.blur {
+  position: fixed;
+  background: rgba(43, 32, 32, 0.1882352941);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-mobile {
+    display: block !important;
+  }
+  .navbar-menu {
+    z-index: 11;
+    padding: 40px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60%;
+    background: #ffffff;
+    border: none;
+    flex-direction: column;
+    justify-content: start !important;
+    gap: 30px !important;
+    box-shadow: 0 7px 10px -3px;
+    transform: translateY(-200%);
+    transition: all 0.7s ease-in-out;
+    align-items: start !important;
+  }
+  .navbar-menu {
+    display: flex !important;
+  }
+  .mobilemenu {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .menu-close {
+    display: block;
+    position: fixed;
+    display: block;
+    top: 10px;
+    right: 30px;
+  }
+}
 .banner-image {
   width: 100%;
   height: 100%;
@@ -306,7 +388,8 @@ a {
   font-family: "Roboto", sans-serif;
 }
 .items-main {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .items-box__title {
@@ -825,12 +908,6 @@ a {
   .header-top__groupIcon {
     padding: 0;
     margin-left: auto;
-  }
-  .navbar-menu {
-    display: none;
-  }
-  .navbar-mobile {
-    display: block !important;
   }
   .news-main {
     flex-wrap: unset;
