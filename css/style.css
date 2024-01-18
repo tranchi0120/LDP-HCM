@@ -1287,6 +1287,24 @@ a {
   background-color: #fff;
   padding: 0;
 }
+.library-image {
+  position: relative;
+}
+.library-icons {
+  color: #fff;
+  font-size: 24px;
+}
+.library-prev, .library-next {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.library-prev {
+  left: 5%;
+}
+.library-next {
+  right: 5%;
+}
 
 .comp {
   margin-top: 32px;

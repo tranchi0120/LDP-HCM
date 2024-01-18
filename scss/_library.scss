@@ -42,4 +42,26 @@
     background-color: #fff;
     padding: 0;
   }
+  &-image {
+    position: relative;
+  }
+
+  &-icons {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  &-prev,
+  &-next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  &-prev {
+    left: 5%;
+  }
+  &-next {
+    right: 5%;
+  }
 }
