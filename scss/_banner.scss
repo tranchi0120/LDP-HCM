@@ -9,3 +9,26 @@
     height: 100%;
   }
 }
+
+// .carousel-item {
+//   display: none;
+// }
+
+// .carousel-item img {
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+.active {
+  display: block;
+}
+
+#slide {
+  position: relative;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+}

@@ -21,13 +21,13 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .container {
   max-width: 1222px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 !important;
   display: block !important;
 }
 
@@ -98,4 +98,8 @@ a {
 .show-scroll {
   bottom: 50px;
   visibility: visible;
+}
+
+label {
+  margin: 0 !important;
 }
