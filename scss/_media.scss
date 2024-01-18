@@ -2,6 +2,12 @@
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1222px !important;
+  }
+}
+
 @media screen and (max-width: 1230px) {
   // .container {
   //   padding: 0 10px;
@@ -160,7 +166,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
   .header {
     &-top {
       &__group {
@@ -247,6 +253,11 @@
     background: red;
     color: white;
   }
+  div#dropdownMenuButton {
+    background: #c8392b;
+    border: none;
+    outline: none;
+  }
 
   .menuOpen {
     display: block;
@@ -325,9 +336,7 @@
   .footer {
     padding: 0 !important;
     height: auto !important;
-    &-main {
-      flex-direction: column;
-    }
+
     &-group {
       flex-direction: column;
     }
